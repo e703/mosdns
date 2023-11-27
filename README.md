@@ -18,9 +18,8 @@ https://github.com/AdguardTeam/AdGuardHome
 |AdGuardHome|3444（http）|53（UDP/TCP）|
 |普罗米修斯|3000（http）|
 
-
-
 ```
+## 其他配置
 chmod +x dns*.sh
 ./dns*.sh
 
@@ -29,4 +28,9 @@ crontab -e
 在文件末尾添加以下内容
 0 5 * * * sudo truncate -s 0 /etc/mosdns/mosdns.log && /etc/mosdns/rules/update-cdn
 #每天5点升级域名库并清除mosdns日志文件
+```
+## AdGuardHome 配置
+安装服务:
+```
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 ```
