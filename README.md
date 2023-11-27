@@ -14,4 +14,4 @@ AdGuardHome使用 53 端口进行DNS接入及广告过滤；上游转发至MOSDN
 | ---------- | :-----------:  | :-----------: | :-----------: |
 |MOSDNS|9080(服务侦测)|6553（UDP/TCP）|
 |easymosdns|
-AdGuardHome  3444（http） 53（UDP/TCP）
+|AdGuardHome|3444（http）|53（UDP/TCP）|
